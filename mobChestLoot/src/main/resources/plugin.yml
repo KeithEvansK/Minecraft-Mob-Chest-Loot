@@ -1,0 +1,4 @@
+name: MobChestLoot
+version: '${project.version}'
+main: com.playatdark.mobchestloot.MobChestLoot
+api-version: '1.20'

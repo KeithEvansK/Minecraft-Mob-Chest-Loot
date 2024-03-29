@@ -1,0 +1,4 @@
+name: MobChestLoot
+version: '1.0-SNAPSHOT'
+main: com.playatdark.mobchestloot.MobChestLoot
+api-version: '1.20'
