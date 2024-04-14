@@ -14,6 +14,9 @@ This plugin combines all dropped loot from enemies into a single entity chest.
 
 Then provides a clean user interface for the player to select loot they want to take and throw away loot they may not want. 
 
+![image](https://github.com/KeithEvansK/Minecraft-Mob-Chest-Loot/assets/99915276/3ccf4090-ff74-4e1c-8799-e3925642a9df)
+
+
 Features Include: 
  - Player specific loot. The plugin will remember what player the loot belongs to and lock it from other players or until a specific amount of time has passed.
  - Less stress on your server because it won't need to render several dropped item entities at any given time.
