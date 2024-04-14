@@ -31,7 +31,7 @@ Features Include:
 
 In Minecraft, all loot is generally dropped onto the ground when an enemy is killed. 
 
-This can cause confusion among multiple members, allows your items to be stolen by other players, and causes unecessary load on the server to maintain all dropped entities at a given time. 
+This can cause confusion among multiple members, allows your items to be stolen by other players, and causes unnecessary load on the server to maintain all dropped entities at a given time. 
 
 
 
@@ -66,7 +66,7 @@ We do need to save important other information such as the location it exists at
 
 The idea of this section is to create a chest entity where the other items were supposed to spawn. 
 
-But this is really the most dificult part of this plugins development for several reasons I'll go into. 
+But this is really the most difficult part of this plugins development for several reasons I'll go into. 
 
 The first being that the chest entity, or any entity for that matter is not supposed to be clickable within Minecraft. 
 The game was designed in a way that it would detect when a player was close to it and would instantly add them to the player's inventory. 
@@ -85,7 +85,7 @@ Another problem was that if the chest moved locations after creation.
 In Minecraft entities are effected by gravity. So if it fell in location and you didn't check that then the player would be finding a chest at the wrong location and be unable to click it to open. 
 
 This was fixed by checking the entity location of the dropped chest entity, and then correcting the location of the virtual chest which does not exist in space. 
-I run this check once every second which is once every 20 server ticks. So while I'd like a more efficient way to achieve thsi without running checks every second, it works for now. I designed this whole plugin with the idea of trying to avoid running that check in any way possible and I was able to minimize it to only the location and live check which worked out pretty good. 
+I run this check once every second which is once every 20 server ticks. So while I'd like a more efficient way to achieve this without running checks every second, it works for now. I designed this whole plugin with the idea of trying to avoid running that check in any way possible and I was able to minimize it to only the location and live check which worked out pretty good. 
 
 With the concept that the chest can move, you also have to deal with that the chest could "die" by something happening like it falls into lava which destroys entities. 
 So within that same function I check if the entity chest is still alive and if not I remove the virtual chest from memory. 
@@ -118,7 +118,19 @@ So in this section I also check the location of chests within range of the curre
 ![image](https://github.com/KeithEvansK/Minecraft-Mob-Chest-Loot/assets/99915276/e7f61a14-e9f5-4f2e-a2d8-5230d4880b4e)
 
 
+### Final Development Thoughts
 
+There are several other small things and bugs I've fixed in this project and many more that will probably arise as Minecraft comes out with new updates or as players use it and find unique ways to break it. 
+
+Because of the necessary development of this plugin I may or may never release it as my own plugin just because of the maintenance required for it. 
+
+But the Minecraft Plugin development community is great and was helpful with documentation and questions when I needed assistance learning more. 
+
+This is only my second Minecraft plugin but I've used Java many times before so it was a fun way of using those skills and seeing them translate into something I enjoy and I don't think this will be my last plugin. 
+
+I developed this plugin out of an idea I had and couldn't find any other solutions already so I made my own. 
+
+Thanks for checking out my project :)
 
 
 
